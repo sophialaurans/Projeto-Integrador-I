@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mara Lucy Pets</title>
+</head>
+
+<body>
+        <div class="banner">
+            <img class="bg" src="img/bg.png" alt="Patas amarelas"/>
+            <img class="logotipo" src="img/logotipo.png" alt="Logotipo da Mara Lucy Pets"/>
+        </div>
+        <nav class="top-nav">
+            <div class="logomarca">
+                <img id="logomarca" src="img/logomarca.png" alt="Logomarca da Mara Lucy Pets, imagem redonda com a foto de uma Yorkshire com fundo azul e borda amarela"/>
+            </div>
+            <div class="search-bar">
+            <form class="search-form" action="/search" method="GET">
+                <input type="text" placeholder="O que você está procurando?">
+                <button type="submit"></button>
+            </form>
+            </div>
+            <div class="user">
+                <p>Perfil</p>
+            </div>
+            <div class="card">
+            </div>
+        </nav>
+        <nav class="bottom-nav">
+            <ul>
+                <li><a href="#">CÃES</a></li>
+                <li><a href="#">GATOS</a></li>
+                <li><a href="#">TODOS</a></li>
+            </ul>
+        </nav>
+    <main>
+        <br /><br/><br /><br /><br /><br /><br /><br /><br /><br /><br/><br /><br/><br/><br /><br/><br /><br /><br /><br /><br /><br /><br/><br /><br/><br /><br/><br/><br /><br /><br/><br /><br /><br/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </main>
+
+<script>
+    const logomarca = document.getElementById('logomarca');
+    const logotipo = document.getElementById('logotipo')
+    const initialSizePercentage = 100;
+
+    function updateLogoSize() {
+        const finalSize = document.querySelector('.top-nav').offsetHeight;
+        const scrollY = window.scrollY;
+        const vw = window.innerWidth;
+        let bannerHeight = document.querySelector('.banner').offsetHeight;
+
+        let stopPoint = bannerHeight;
+        let scale = 1;
+
+        if (scrollY < stopPoint) {
+            scale = scale - (scrollY / stopPoint);
+        }
+
+        scale = Math.max(scale, (450 / vw));
+
+        logomarca.style.width = `${initialSizePercentage * scale}%`;
+        logomarca.style.height = `${initialSizePercentage * scale}%`;
+
+        if (scrollY >= stopPoint) {
+            logomarca.classList.add("scrolled");
+            logomarca.style.top = '0';
+        } else {
+            logomarca.classList.remove("scrolled");
+            logomarca.style.top = `${stopPoint - scrollY}px`;
+        }
+
+        if (scrollY >= stopPoint) {
+            logomarca.style.width = `${finalSize + 1}px`;
+            logomarca.style.height = `${finalSize + 1}px`;
+        }
+
+    }
+
+    window.addEventListener('resize', updateLogoSize);
+    window.addEventListener('scroll', updateLogoSize);
+
+    updateLogoSize();
+</script>
+
+</body>
+
+</html>

@@ -8,8 +8,12 @@ body {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
 .banner {
-    background-image: linear-gradient(#370035, #4a0047);
+    background-image: linear-gradient(#240025, #3F0241);
     height: 12vw;
     width: 100%;
     position: relative;
@@ -31,7 +35,7 @@ body {
 }
 
 .top-nav {
-    background-color: #4a0047;
+    background-color: #3F0241;
     position: sticky;
     top: 0;
     display: flex;
@@ -109,7 +113,7 @@ body {
     transform: translateY(-50%);
 }
 
-.card {
+.cart {
     position: absolute;
     background-color: white;
     height: 45%;
@@ -120,7 +124,7 @@ body {
     cursor: pointer;
 }
 
-.card::before {
+.cart::before {
     content: "";
     background-image: url('img/carrinho.png');
     background-size: contain;
@@ -164,7 +168,6 @@ body {
 }
 
 .bottom-nav li a {
-    text-decoration: none;
     color: #370035;
     font-weight: bold;
     padding: 3px 10vw;
@@ -199,7 +202,6 @@ body {
 .category p {
     position: absolute;
     font-family: 'Archivo Black';
-    text-decoration: none;
     color: white;
     justify-content: center;
     top: 40%;
@@ -249,11 +251,11 @@ h2 {
 }
 
 .product:hover {
-    padding: 10px;
-    border: 3px solid #721f6f;
+    padding: 12px;
+    border: 1px solid #754174;
     box-shadow:
-        1px 1px 2px #721f6f,
-        -1px -1px 2px #721f6f;
+        1px 1px 2px #26AFFF,
+        -1px -1px 2px #26AFFF;
 }
 
 .product img {
@@ -273,7 +275,7 @@ h2 {
 .price {
     position: absolute;
     font-weight: bold;
-    color: #4a0047;
+    color: #3F0241;
     border-radius: 5px;
     bottom: 5%;
     text-align: left;
@@ -300,9 +302,9 @@ h2 {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    background-color: #370035;
+    background-image: linear-gradient(#3F0241, #240025);
     color: white;
-    padding: 20px 10vw;
+    padding: 20px 10% 30px;
 }
 
 .about {

@@ -1,88 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Mara Lucy Pets</title>
-</head>
-
-<body>
-        <div class="banner">
-            <img class="bg" src="img/bg.png" alt="Patas amarelas"/>
-            <img class="logotipo" src="img/logotipo.png" alt="Logotipo da Mara Lucy Pets"/>
-        </div>
-        <nav class="top-nav">
-            <div class="logomarca">
-                <img id="logomarca" src="img/logomarca.png" alt="Logomarca da Mara Lucy Pets, imagem redonda com a foto de uma Yorkshire com fundo azul e borda amarela"/>
+	<head>
+		<title>Mara Lucy Pets</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Luidy Baldez"/>
+        <meta name="author" content="Rayra Feitosa Alves"/>
+        <meta name="author" content="Sophia Laura Nunes Silva"/>
+		<meta name="keywords" content="Acessórios, cães, cachorros, pets, gatos, coleiras, peitorais, guias"/>
+		<meta name="description" content="Venda de acessórios para cães e gatos"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="estilo.css"/>
+	</head>
+    <body>
+            <div class="banner">
+                <img class="bg" src="img/bg.png" alt="Patas amarelas"/>
+                <a href="#"><img class="logotipo" src="img/logotipo.png" alt="Logotipo da Mara Lucy Pets"/></a>
             </div>
-            <div class="search-bar">
-            <form class="search-form" action="/search" method="GET">
-                <input type="text" placeholder="O que você está procurando?">
-                <button type="submit"></button>
-            </form>
-            </div>
-            <div class="user">
-                <p>Perfil</p>
-            </div>
-            <div class="card">
-            </div>
-        </nav>
-        <nav class="bottom-nav">
-            <ul>
-                <li><a href="#">CÃES</a></li>
-                <li><a href="#">GATOS</a></li>
-                <li><a href="#">TODOS</a></li>
-            </ul>
-        </nav>
-    <main>
-        <br /><br/><br /><br /><br /><br /><br /><br /><br /><br /><br/><br /><br/><br/><br /><br/><br /><br /><br /><br /><br /><br /><br/><br /><br/><br /><br/><br/><br /><br /><br/><br /><br /><br/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </main>
+            <nav class="top-nav">
+                <div class="logomarca">
+                    <a href="#"><img id="logomarca" src="img/logomarca.png" alt="Logomarca da Mara Lucy Pets, imagem redonda com a foto de uma Yorkshire com fundo azul e borda amarela"/></a>
+                </div>
+                <div class="search-bar">
+                    <form class="search-form" action="/search" method="GET">
+                        <input type="text" placeholder="O que você está procurando?">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <div class="user">
+                    <p>Perfil</p>
+                </div>
+                <div class="card">
+                </div>
+            </nav>
+            <nav class="bottom-nav">
+                <ul>
+                    <li><a href="#">CÃES</a></li>
+                    <li><a href="#">GATOS</a></li>
+                    <li><a href="#">TODOS</a></li>
+                </ul>
+            </nav>
+        <main>
+            <section class="categories">
+                <div class="category">
+                    <a href="#">
+                        <p>PEITORAIS</p>
+                        <img src="img/peitorais.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">               
+                        <p>COLEIRAS</p>
+                        <img src="img/coleiras.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="#">
+                        <p>GUIAS DE CORDA</p>
+                        <img src="img/guias.jpg" alt=""/>
+                    </a>
+                </div>
+            </section>
+            <section class="row">
+                <h2>Produtos recomendados</h2>
+                <img src="img/seta-esquerda.png" alt="" class="arrow-left"/>
+                    <div class="products">
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Poliester com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Coleira de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt="" class="arrow"/>
+                                <p>Coleira de Poliester com Guia e Pingente</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                    </div>
+                <img src="img/seta-direita.png" alt="Seta " class="arrow-right"/>
+            </section>
+            <section class="row">
+                <h2>Pequeno porte</h2>
+                <img src="img/seta-esquerda.png" alt="" class="arrow-left"/>
+                    <div class="products">
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Poliester com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Coleira de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt="" class="arrow"/>
+                                <p>Coleira de Poliester com Guia e Pingente</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                    </div>
+                <img src="img/seta-direita.png" alt="Seta " class="arrow-right"/>
+            </section>
+            <section class="row">
+                <h2>Médio porte</h2>
+                <img src="img/seta-esquerda.png" alt="" class="arrow-left"/>
+                    <div class="products">
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Poliester com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Coleira de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt="" class="arrow"/>
+                                <p>Coleira de Poliester com Guia e Pingente</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                    </div>
+                <img src="img/seta-direita.png" alt="Seta " class="arrow-right"/>
+            </section>
+            <section class="row">
+                <h2>Grande porte</h2>
+                <img src="img/seta-esquerda.png" alt="" class="arrow-left"/>
+                    <div class="products">
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Peitoral de Poliester com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt=""/>
+                                <p>Coleira de Nilon com Guia</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                            <a href="#" class="product">
+                                <img src="img/exemplo.png" alt="" class="arrow"/>
+                                <p>Coleira de Poliester com Guia e Pingente</p>
+                                <div class="price">R$ 9,99</div>
+                            </a>
+                    </div>
+                <img src="img/seta-direita.png" alt="Seta " class="arrow-right"/>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="about">
+                    <h3>Sobre</h3>
+                    <p>Quem somos</p>
+                    <p>Contato</p>
+                </div>
+                <div class="services">
+                    <h3>Serviços</h3>
+                    <p>Venda para Petshops</p>
+                    <p>Entrega</p>
+                    <p>Troca e devolução</p>
+                </div>
+                <div class="social-media">
+                    <h3>Redes sociais</h3>
+                    <p class="social-media-logos">
+                        <img src="img/insta.png"/>
+                        <img src="img/wpp.png"/>
+                    </p>
+                </div>
+                <div class="company">
+                    <img src="img/logomarca.png" class="company-logomark"/>
+                    <img src="img/logotipo.png" class="company-logotype"/>
+                    <p>CNPJ 50.716.105/0001-10</p>
+                </div>
+            </div> 
+        </footer>
 
-<script>
-    const logomarca = document.getElementById('logomarca');
-    const logotipo = document.getElementById('logotipo')
-    const initialSizePercentage = 100;
 
-    function updateLogoSize() {
-        const finalSize = document.querySelector('.top-nav').offsetHeight;
-        const scrollY = window.scrollY;
-        const vw = window.innerWidth;
-        let bannerHeight = document.querySelector('.banner').offsetHeight;
+    <script>
+        const logomarca = document.getElementById('logomarca');
+        const logotipo = document.getElementById('logotipo')
+        const initialSizePercentage = 100;
 
-        let stopPoint = bannerHeight;
-        let scale = 1;
+        function updateLogoSize() {
+            const finalSize = document.querySelector('.top-nav').offsetHeight;
+            const scrollY = window.scrollY;
+            const vw = window.innerWidth;
+            let bannerHeight = document.querySelector('.banner').offsetHeight;
 
-        if (scrollY < stopPoint) {
-            scale = scale - (scrollY / stopPoint);
+            let stopPoint = bannerHeight;
+            let scale = 1;
+
+            if (scrollY < stopPoint) {
+                scale = scale - (scrollY / stopPoint);
+            }
+
+            scale = Math.max(scale, (450 / vw));
+
+            logomarca.style.width = `${initialSizePercentage * scale}%`;
+            logomarca.style.height = `${initialSizePercentage * scale}%`;
+
+            if (scrollY >= stopPoint) {
+                logomarca.classList.add("scrolled");
+                logomarca.style.top = '0';
+            } else {
+                logomarca.classList.remove("scrolled");
+                logomarca.style.top = `${stopPoint - scrollY}px`;
+            }
+
+            if (scrollY >= stopPoint) {
+                logomarca.style.width = `${finalSize + 1}px`;
+                logomarca.style.height = `${finalSize + 1}px`;
+            }
+
         }
 
-        scale = Math.max(scale, (450 / vw));
+        window.addEventListener('resize', updateLogoSize);
+        window.addEventListener('scroll', updateLogoSize);
 
-        logomarca.style.width = `${initialSizePercentage * scale}%`;
-        logomarca.style.height = `${initialSizePercentage * scale}%`;
+        updateLogoSize();
+    </script>
 
-        if (scrollY >= stopPoint) {
-            logomarca.classList.add("scrolled");
-            logomarca.style.top = '0';
-        } else {
-            logomarca.classList.remove("scrolled");
-            logomarca.style.top = `${stopPoint - scrollY}px`;
-        }
-
-        if (scrollY >= stopPoint) {
-            logomarca.style.width = `${finalSize + 1}px`;
-            logomarca.style.height = `${finalSize + 1}px`;
-        }
-
-    }
-
-    window.addEventListener('resize', updateLogoSize);
-    window.addEventListener('scroll', updateLogoSize);
-
-    updateLogoSize();
-</script>
-
-</body>
+    </body>
 
 </html>

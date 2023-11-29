@@ -48,13 +48,12 @@ a {
 .search-bar {
     position: absolute;
     right: 30%;
-    left: inherit;
 }
 
 .search-bar input[type="text"] {
     padding: 1vw;
     width: 30vw;
-    height: 90%;
+    height: 100%;
     border: 1px solid #ccc;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -86,19 +85,20 @@ a {
 .user {
     position: absolute;
     background-color: white;
-    height: 45%;
+    height: 3vw;
     width: 85px;
     right: 15%;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 .user p {
     position: relative;
+    padding-bottom: 30%;
     left: 35px;
+    top: 50%;
     transform: translateY(-50%);
-    top: 15%;
 }
 
 .user::before {
@@ -116,11 +116,11 @@ a {
 .cart {
     position: absolute;
     background-color: white;
-    height: 45%;
-    width: 40px;
+    height: 3vw;
+    width: 3.5vw;
     right: 10%;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -131,9 +131,9 @@ a {
     width: 1rem;
     height: 1rem;
     position: absolute;
-    left: 30%;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .logomarca {
@@ -272,6 +272,11 @@ h2 {
     margin-top: 15%;
 }
 
+.product:hover p {
+    text-decoration: underline;
+    color: #3F0241;
+}
+
 .price {
     position: absolute;
     font-weight: bold;
@@ -342,7 +347,7 @@ h2 {
 }
 
 .company-logomark {
-    max-width: 30%;
+    max-width: 25%;
 }
 
 .company-logotype {

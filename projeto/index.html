@@ -20,6 +20,7 @@
             <div class="logomarca">
                 <a href="#"><img id="logomarca" src="img/logomarca.png" alt="Logomarca da Mara Lucy Pets, imagem redonda com a foto de uma Yorkshire com fundo azul e borda amarela"/></a>
             </div>
+            <a href="#"><img id="logotipo" class="logotipo-scrolled" src="img/logotipo.png" alt="Logotipo da Mara Lucy Pets"/></a>
             <div class="search-bar">
                 <form class="search-form" action="/search" method="GET">
                     <input type="text" placeholder="O que você está procurando?">
@@ -199,7 +200,7 @@
 
         <script>
             const logomarca = document.getElementById('logomarca');
-            const logotipo = document.getElementById('logotipo')
+            const logotipo = document.getElementById('logotipo');
             const initialSizePercentage = 100;
 
             function updateLogoSize() {
@@ -207,6 +208,7 @@
                 const scrollY = window.scrollY;
                 const vw = window.innerWidth;
                 let bannerHeight = document.querySelector('.banner').offsetHeight;
+                let logomarcaHeight = parseFloat(logomarca.style.height);
 
                 let stopPoint = bannerHeight;
                 let scale = 1;
@@ -226,11 +228,14 @@
                 } else {
                     logomarca.classList.remove("scrolled");
                     logomarca.style.top = `${stopPoint - scrollY}px`;
+                    logotipo.style.opacity = 0;
                 }
 
                 if (scrollY >= stopPoint) {
                     logomarca.style.width = `${finalSize + 1}px`;
                     logomarca.style.height = `${finalSize + 1}px`;
+                    logotipo.style.opacity = 1;
+                    logotipo.style.paddingLeft = `calc(${logomarca.style.height} + 11vw)`;
                 }
 
             }

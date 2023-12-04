@@ -150,6 +150,12 @@ a {
     bottom: 0;
 }
 
+.logotipo-scrolled {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 10vw;
+}
+
 .bottom-nav ul {
     font-family: 'Archivo Black';
     list-style: none;
@@ -176,11 +182,6 @@ a {
 .bottom-nav li a:hover {
     background: #ffdf1b;
     color: white;
-}
-
-.logomarca.scrolled .logotipo {
-    display: inline-block;
-    margin-left: 10px;
 }
 
 .row {

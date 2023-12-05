@@ -27,7 +27,6 @@ a {
 .logotipo {
     position: absolute;
     left: 60%;
-    right: inherit;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
@@ -48,26 +47,27 @@ a {
 .search-bar {
     position: absolute;
     right: 30%;
+    height: 3vw;
 }
 
 .search-bar input[type="text"] {
     padding: 1vw;
+    height: 1vw;
     width: 30vw;
-    height: 100%;
-    border: 1px solid #ccc;
+    border: none;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 .search-bar button[type="submit"] {
+    position: absolute;
     background-color: white;
-    height: 100%;
+    height: 3vw;
     width: 35px;
     border: none;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     cursor: pointer;
-    position: absolute;
 }
 
 .search-bar button[type="submit"]::before {
@@ -82,6 +82,10 @@ a {
     transform: translateY(-50%);
 }
 
+.index-buttons {
+    align-items: center;
+}
+
 .user {
     position: absolute;
     background-color: white;
@@ -91,6 +95,8 @@ a {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .user p {
@@ -122,6 +128,8 @@ a {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .cart::before {
@@ -136,24 +144,26 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.logomarca {
+.logomarca-index {
     position: absolute;
     height: 20vw;
     width: 20vw;
     padding-left: 10vw;
 }
 
-.logomarca img {
+.logomarca-index img {
     position: sticky;
     width: 100%;
     height: 100%;
     bottom: 0;
 }
 
-.logotipo-scrolled {
+.logotipo-scrolled a img {
+    position: sticky;
     opacity: 0;
     transition: opacity 0.3s ease;
-    width: 10vw;
+    width: 14vw;
+    height: auto;
 }
 
 .bottom-nav ul {
@@ -353,6 +363,29 @@ h2 {
 
 .company-logotype {
     max-width: 60%;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 40%;
+    padding-left: 10vw;
+}
+
+.logomark {
+    position: sticky;
+    height: 100%;
+    width: auto;
+}
+
+.logotype {
+    position: absolute;
+    padding-left: 1vw;
+    width: 14vw;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*MOBILE*/

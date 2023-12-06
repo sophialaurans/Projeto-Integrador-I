@@ -580,7 +580,8 @@ input[type="radio"]:checked + label img {
     }
 }
 /* PÁGINA SUPORTE*/
-.container {
+
+    .container {
       width: 85%;
       margin:16px auto;
     }
@@ -640,3 +641,73 @@ input[type="radio"]:checked + label img {
       
     }
 /* PÁGINA SUPORTE*/
+
+/* PÁGINA PERFIL*/
+.titleb{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+  }
+.titlep{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.containerp{
+    width: 90%;
+    margin:30px ;
+    margin-left: 60px;
+
+}
+.options {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 180px;
+  padding-top:3px; 
+
+}
+
+.box {
+  background-color: #F1F1F1;
+  border-radius: 25px;
+  padding: 6px;
+  padding-top: 0px;
+  width: 40%; 
+  box-shadow: inset 0 0 20px #d6d6d6;
+  border-width: medium;
+  border-style: solid;
+  border-color: #d6d6d6;
+}
+
+#boxsuporte{
+    margin-left: 160px;
+}
+.box img{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 60px;
+}
+.imgperfil{
+    margin-top: 0px;
+    margin-left: 20px;
+    height: 50px; 
+}
+a.linkperfil:link{
+    text-decoration: none;
+    color: black;
+}
+a.linkperfil:visited{
+    text-decoration: none;
+    color: black;
+}
+a.linkperfil:hover{
+    text-decoration: none;
+    color: black;
+}
+a.linkperfil:active{
+    text-decoration: none;
+    color: black; 
+}
+
+/* PÁGINA PERFIL*/

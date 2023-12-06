@@ -430,6 +430,7 @@ margin-top: 10%;
     .title {
       font-size: 24px;
       margin-bottom: 20px;
+      margin-top: 50px;
     }
     .form-group {
       margin-bottom: 20px;
@@ -445,6 +446,13 @@ margin-top: 10%;
       border: 1px solid #ccc;
       background-color: #d3d3d3;
     }
+    input[type="nome"]{
+      width: 45%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #d3d3d3;
+  }
 
     textarea {
       width: 65%;
@@ -471,6 +479,7 @@ margin-top: 10%;
     .btn-cancel {
       background-color: #d3d3d3;
       color: black;
+      margin-bottom: 92px;
       
     }
 /* PÁGINA SUPORTE*/

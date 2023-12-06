@@ -40,15 +40,40 @@
             </ul>
         </nav>
         <main>
-            <section class="product-images">
-                <div class="product-details">
+            <section class="product-details">
+                <div class="product-images">
                     <div class="product-column" id="productColumn">
-                    <img src="img/produtos/pequeno1.png" alt="Imagem 1" onclick="changeImage('img/produtos/pequeno1.png')">
-                    <img src="img/produtos/pequeno2.png" alt="Imagem 2" onclick="changeImage('img/produtos/pequeno2.png')">
-                    <img src="img/produtos/pequeno3.png" alt="Imagem 3" onclick="changeImage('img/produtos/pequeno3.png')">
+                        <img src="img/produtos/pequeno1.png" alt="Imagem 1" onclick="changeImage('img/produtos/pequeno1.png')">
+                        <img src="img/produtos/pequeno2.png" alt="Imagem 2" onclick="changeImage('img/produtos/pequeno2.png')">
+                        <img src="img/produtos/pequeno3.png" alt="Imagem 3" onclick="changeImage('img/produtos/pequeno3.png')">
                     </div>
                     <div class="main-image" id="mainImage">
-                    <img src="img/produtos/pequeno1.png" alt="Imagem principal">
+                        <img src="img/produtos/pequeno1.png" alt="Imagem principal">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>Peitoral Ajustável em X de Poliester com Guia</h1>
+
+                    <p class="availability">Em estoque</p>
+                    <div class="product-size">
+                        <label for="tamanho">Tamanho:</label>
+                        <select id="tamanho" name="tamanho">
+                            <option value="">Selecione</option>
+                            <option value="pp">PP</option>
+                            <option value="p">P</option>
+                            <option value="m">M</option>
+                            <option value="pp">G</option>
+                            <option value="p">GG</option>
+                        </select>
+                    </div>
+                    <label for="cor">Cor:</label>
+                    <div class="product-color">
+                        <input type="radio" id="cor1" name="cor" checked>
+                        <label for="cor1"><img src="img/produtos/pequeno4.png" alt="Imagem 1"></label>
+                        <input type="radio" id="cor2" name="cor">
+                        <label for="cor2"><img src="img/produtos/pequeno5.png" alt="Imagem 2"></label>
+                        <input type="radio" id="cor3" name="cor">
+                        <label for="cor3"><img src="img/produtos/pequeno6.png" alt="Imagem 3"></label>
                     </div>
                 </div>
             </section>

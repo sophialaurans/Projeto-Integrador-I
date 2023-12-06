@@ -14,7 +14,7 @@
     <body>
         <nav class="top-nav">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img class="logomark" src="img/logomarca.png" alt="Logomarca da Mara Lucy Pets, imagem redonda com a foto de uma Yorkshire com fundo azul e borda amarela"/>
                     <img class="logotype" src="img/logotipo.png" alt="Logotipo da Mara Lucy Pets"/>
                 </a>
@@ -40,7 +40,77 @@
             </ul>
         </nav>
         <main>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <section class="search-page">
+                <div class="filters">
+                    <h4>Filtrar busca</h4>
+                    <button class="clean-filters" onclick="cleanFilters()">
+                        <img class="trash-icon" src="img/lixeira.png" alt="Lixeira">
+                        Limpar filtros
+                    </button>
+                    <h4>Pet</h4>
+                    <ul>
+                        <li><input type="checkbox" id="caes"> <label for="caes">Cães</label></li>
+                        <li><input type="checkbox" id="gatos"> <label for="gatos">Gatos</label></li>
+                    </ul>
+                    <h4>Tipo de acessório</h4>
+                    <ul>
+                        <li><input type="checkbox" id="coleira"> <label for="coleira">Coleira</label></li>
+                        <li><input type="checkbox" id="peitoral"> <label for="peitoral">Peitoral</label></li>
+                        <li><input type="checkbox" id="guia"> <label for="guia">Guia</label></li>
+                    </ul>
+                    <h4>Porte do animal</h4>
+                    <ul>
+                        <li><input type="checkbox" id="grande"> <label for="grande">Grande</label></li>
+                        <li><input type="checkbox" id="medio"> <label for="medio">Médio</label></li>
+                        <li><input type="checkbox" id="pequeno"> <label for="pequeno">Pequeno</label></li>
+                    </ul>
+                    <h4>Material</h4>
+                    <ul>
+                        <li><input type="checkbox" id="poliester"> <label for="poliester">Poliester</label></li>
+                        <li><input type="checkbox" id="nylon"> <label for="nylon">Nylon</label></li>
+                    </ul>
+                </div>
+                <div class="results">
+                    <h2>Resultados</h2>
+                    <div class="products-result">
+                        <a href="#" class="product">
+                            <img src="img/produtos/medio10.png" alt=""/>
+                            <p>Coleira de Nilon</p>
+                            <div class="price">R$ 9,99</div>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/produtos/medio7.png" alt=""/>
+                            <p>Coleira de Poliester</p>
+                            <div class="price">R$ 9,99</div>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/produtos/medio2.png" alt=""/>
+                            <p>Peitoral de Poliester com Guia</p>
+                            <div class="price">R$ 9,99</div>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/produtos/medio3.png" alt="" class="arrow"/>
+                            <p>Peitoral de Nilon com Guia</p>
+                            <div class="price">R$ 9,99</div>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/produtos/medio10.png" alt=""/>
+                            <p>Coleira de Nilon</p>
+                            <div class="price">R$ 9,99</div>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/produtos/medio10.png" alt=""/>
+                            <p>Coleira de Nilon</p>
+                            <div class="price">R$ 9,99</div>
+                        </a>
+                        <a href="#" class="product">
+                            <img src="img/produtos/medio10.png" alt=""/>
+                            <p>Coleira de Nilon</p>
+                            <div class="price">R$ 9,99</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
         
         <footer>
@@ -70,5 +140,14 @@
                 </div>
             </div> 
         </footer>
+
+        <script>
+            function cleanFilters() {
+              var checkboxes = document.querySelectorAll('.filters input[type="checkbox"]');
+              checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+              });
+            }
+          </script>
     </body>
 </html>

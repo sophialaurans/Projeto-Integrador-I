@@ -268,6 +268,9 @@ h2 {
     font-size: 1rem;
     margin-top: 15%;
 }
+#twoline {
+margin-top: 10%;
+}
 
 .product:hover p {
     text-decoration: underline;
@@ -280,8 +283,9 @@ h2 {
     color: #3F0241;
     border-radius: 5px;
     bottom: 5%;
-    text-align: left;
+    text-align:left; ;
     font-size: 1.1rem;
+
 }
 
 .row img:hover {
@@ -418,3 +422,55 @@ h2 {
         height: 90px;
     }
 }
+/* PÁGINA SUPORTE*/
+.container {
+      width: 85%;
+      margin:16px auto;
+    }
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="email"] {
+      width: 45%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #d3d3d3;
+    }
+
+    textarea {
+      width: 65%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #d3d3d3;
+    }
+    button {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      
+      
+    }
+    .btn-send {
+      background-color: #B2E3FF;
+      color: black;
+      margin-right: 10px;
+
+      
+    }
+    .btn-cancel {
+      background-color: #d3d3d3;
+      color: black;
+      
+    }
+/* PÁGINA SUPORTE*/

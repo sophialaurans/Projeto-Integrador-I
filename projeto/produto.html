@@ -43,9 +43,9 @@
             <section class="product-details">
                 <div class="product-images">
                     <div class="product-column" id="productColumn">
-                        <img src="img/produtos/pequeno1.png" alt="Imagem 1" onclick="changeImage('img/produtos/pequeno1.png')">
-                        <img src="img/produtos/pequeno2.png" alt="Imagem 2" onclick="changeImage('img/produtos/pequeno2.png')">
-                        <img src="img/produtos/pequeno3.png" alt="Imagem 3" onclick="changeImage('img/produtos/pequeno3.png')">
+                        <img src="img/produtos/pequeno1.png" alt="Peitoral Lilás" onclick="changeImage('img/produtos/pequeno1.png')">
+                        <img src="img/produtos/pequeno2.png" alt="Peitoral Rosa" onclick="changeImage('img/produtos/pequeno2.png')">
+                        <img src="img/produtos/medio1.png" alt="Peitoral Vermelho" onclick="changeImage('img/produtos/medio1.png')">
                     </div>
                     <div class="main-image" id="mainImage">
                         <img src="img/produtos/pequeno1.png" alt="Imagem principal">
@@ -72,11 +72,20 @@
                     <label for="cor">Cor:</label>
                     <div class="product-color">
                         <input type="radio" id="cor1" name="cor" checked>
-                        <label for="cor1"><img src="img/produtos/pequeno4.png" alt="Imagem 1"></label>
+                        <label for="cor1">
+                            <img src="img/produtos/pequeno1.png" alt="Peitoral Lilás">
+                            <span>Lilás</span>
+                        </label>
                         <input type="radio" id="cor2" name="cor">
-                        <label for="cor2"><img src="img/produtos/pequeno5.png" alt="Imagem 2"></label>
+                        <label for="cor2">
+                            <img src="img/produtos/pequeno2.png" alt="Peitoral Rosa">
+                            <span>Rosa</span>
+                        </label>
                         <input type="radio" id="cor3" name="cor">
-                        <label for="cor3"><img src="img/produtos/pequeno6.png" alt="Imagem 3"></label>
+                        <label for="cor3">
+                            <img src="img/produtos/medio1.png" alt="Peitoral Vermelho">
+                            <span>Vermelho</span>
+                        </label>
                     </div>
                     <div class="price-details">
                         <p>Por: </p>
@@ -95,44 +104,45 @@
                 <h2>Especificações</h2>
                 <p>Porte do animal: Pequeno porte</p>
                 <p>Material: Poliester</p>
-                
-                <p>Guia de tamanhos: </p>
-                <table class="size-guide">
-                    <thead>
-                        <tr>
-                            <th>Tamanho</th>
-                            <th>Circunferência</th>
-                            <th>Comprimento da guia</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>PP</td>
-                            <td>10cm a 20cm</td>
-                            <td>1m</td>
-                        </tr>
-                        <tr>
-                            <td>P</td>
-                            <td>13cm a 23cm</td>
-                            <td>1m</td>
-                        </tr>
-                        <tr>
-                            <td>M</td>
-                            <td>16cm a 26cm</td>
-                            <td>1m</td>
-                        </tr>
-                        <tr>
-                            <td>G</td>
-                            <td>19cm a 29cm</td>
-                            <td>1m</td>
-                        </tr>
-                        <tr>
-                            <td>GG</td>
-                            <td>22cm a 32cm</td>
-                            <td>1m</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="size-guide">
+                    <p>Guia de tamanhos: </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Circunferência</th>
+                                <th>Comprimento da guia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PP</td>
+                                <td>10cm a 20cm</td>
+                                <td>1m</td>
+                            </tr>
+                            <tr>
+                                <td>P</td>
+                                <td>13cm a 23cm</td>
+                                <td>1m</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>16cm a 26cm</td>
+                                <td>1m</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>19cm a 29cm</td>
+                                <td>1m</td>
+                            </tr>
+                            <tr>
+                                <td>GG</td>
+                                <td>22cm a 32cm</td>
+                                <td>1m</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <h2>Avaliações de clientes</h2>
                 <div class="customer-review">
                     <p class="client-name">Por: Nome do Cliente</p>

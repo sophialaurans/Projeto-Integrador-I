@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo Black');
+@import url('https://fonts.googleapis.com/css?family=Castoro');
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     position: relative;
 }
 
@@ -12,6 +13,7 @@ a {
     text-decoration: none;
 }
 
+/* INDEX */
 .banner {
     background-image: linear-gradient(#240025, #3F0241);
     height: 12vw;
@@ -63,7 +65,7 @@ a {
     position: absolute;
     background-color: white;
     height: 3vw;
-    width: 35px;
+    width: 2rem;
     border: none;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
@@ -232,7 +234,7 @@ main {
 
 h2 {
     padding: 15px 7vw 0;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .products {
@@ -270,11 +272,12 @@ h2 {
 .product p {
     color: black;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1em;
     margin-top: 15%;
 }
+
 #twoline {
-margin-top: 10%;
+    margin-top: 10%;
 }
 
 .product:hover p {
@@ -289,8 +292,8 @@ margin-top: 10%;
     border-radius: 5px;
     bottom: 5%;
     text-align:left; ;
-    font-size: 1.1rem;
-
+    font-size: 1.1em;
+    font-family: "Castoro";
 }
 
 .row img:hover {
@@ -315,6 +318,7 @@ margin-top: 10%;
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 100%;
     background-image: linear-gradient(#3F0241, #240025);
@@ -323,12 +327,12 @@ margin-top: 10%;
 }
 
 .footer h3 {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: bolder;
 }
 
 .footer p {
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 .footer a {
@@ -336,30 +340,33 @@ margin-top: 10%;
 }
 
 .footer p a:hover {
-    font-size: 0.91rem;
+    font-size: 1em;
     font-weight: bold;
 }
 
 .about {
-    padding-left: 10px;
-    width: 25%;
+    width: 20%;
+    max-width: 20%;
     height: auto;
 }
 
 .services {
+    width: 20%;
     padding-left: 10px;
-    width: 30%;
+    max-width: 25%;
     height: auto;
 }
 
 .social-media {
     padding-left: 10px;
-    width: 30%;
+    width: 20%;
+    max-width: 25%;
     height: auto;
 }
 
 .social-media-logos {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social-media-logos a img {
@@ -373,10 +380,11 @@ margin-top: 10%;
 }
 
 .company {
-    width: 30%;
+    max-width: 25%;
     height: auto;
     text-align: right;
     padding-top: 1%;
+    overflow-x: auto;
 }
 
 .company-logomark {
@@ -411,9 +419,10 @@ margin-top: 10%;
 }
 
 .company p {
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
+/* BUSCA */
 .search-page {
     position: relative;
     min-height: 450px;
@@ -451,13 +460,13 @@ h4 {
     margin-left: 0;
     padding-left: 0;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     align-items: left;
 }
 
 .trash-icon {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.8em;
+    height: 0.8em;
 }
 
 .results {
@@ -475,11 +484,13 @@ h4 {
     margin: 0 10px 10px 0;
 }
 
+/* DETALHES DO PRODUTO */
 .product-details {
     margin-left: 7vw;
     margin-right: 7vw;
     min-height: 450px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product-images {
@@ -525,7 +536,7 @@ h4 {
 .stars-review {
     display: flex;
     color: #474747;
-    font-size: 0.7rem;
+    font-size: 0.7em;
     align-items: center;
 }
 
@@ -543,16 +554,21 @@ h4 {
 
 .product-size, .product-color {
     display: flex;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
     align-items: first baseline;
 }
 
 .product-size label, .product-color {
-    margin-right: 0.5rem;
+    margin-right: 0.5em;
 }
 
-input[type="radio"] {
+.product-color input[type="radio"] {
     display: none;
+}
+
+.product-color label {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-color img {
@@ -566,9 +582,14 @@ input[type="radio"] {
     transform: scale(1.05);
 }
 
-input[type="radio"]:checked + label img {
+.product-color input[type="radio"]:checked + label img {
     border: 2px solid #3F0241;
     transform: scale(1.05);
+}
+
+.product-color span {
+    font-size: 0.8em;
+    margin-top: 0.4em;
 }
 
 .price-details {
@@ -581,8 +602,9 @@ input[type="radio"]:checked + label img {
 }
 
 .price-details h3 {
-    font-size: 2rem;
+    font-size: 2em;
     margin: 1vw 0;
+    font-family: "Castoro"
 }
 
 .cart-btn {
@@ -593,7 +615,7 @@ input[type="radio"]:checked + label img {
     text-decoration: none;
     background-color: #FFDF1B;
     color: black;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -625,35 +647,45 @@ input[type="radio"]:checked + label img {
 }
 
 .product-description p {
-    margin: 0.3rem;
+    margin: 0.3em;
 }
 
 .product-description h2 {
     padding-left: 0;
     font-weight: lighter;
     margin-bottom: 0;
-    padding-top: 2rem;
+    padding-top: 2em;
+    font-size: 1.4em;
 }
 
 .client-name {
     font-style: italic;
-    padding-top: 1.2rem;
-    font-size: 0.8rem;
+    padding-top: 1.2em;
+    font-size: 0.8em;
 }
 
 .customer-review-stars img {
     width: 10%;
     max-width: 90px;
+    min-width: 40px;
 }
 
 .customer-review-stars p {
-    font-size: 0.6rem;
+    font-size: 0.6em;
     color: #474747;
     margin-top: 0;
 }
 
 .size-guide {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.size-guide table {
     border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
 }
 
 .size-guide td, .size-guide th {
@@ -676,6 +708,7 @@ input[type="radio"]:checked + label img {
         height: 90px;
     }
 }
+
 /* PÁGINA SUPORTE*/
 
     .container {
@@ -690,18 +723,18 @@ input[type="radio"]:checked + label img {
     .form-group {
       margin-bottom: 20px;
     }
-    label {
+    .form-group label {
       display: block;
       margin-bottom: 5px;
     }
-    input[type="email"] {
+    .form-group input[type="email"] {
       width: 45%;
       padding: 8px;
       border-radius: 5px;
       border: 1px solid #ccc;
       background-color: #d3d3d3;
     }
-    input[type="nome"]{
+    .form-group input[type="nome"]{
       width: 45%;
       padding: 8px;
       border-radius: 5px;
@@ -716,7 +749,7 @@ input[type="radio"]:checked + label img {
       border: 1px solid #ccc;
       background-color: #d3d3d3;
     }
-    button {
+    .form-group button {
       padding: 8px 20px;
       border: none;
       border-radius: 5px;
@@ -820,7 +853,7 @@ a.linkperfil:active{
   margin-bottom: 20px;
 }
 
-input[type="text"],
+.form-groupp input[type="text"],
 input[type="emaill"],
 input[type="tel"] {
   width: 1220px;

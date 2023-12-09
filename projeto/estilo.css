@@ -183,10 +183,6 @@ a {
     color: white;
 }
 
-main {
-    margin: 20px 0;
-}
-
 .row {
     position: relative;
 }
@@ -232,7 +228,7 @@ main {
     transform: scale(1.05);
 }
 
-h2 {
+.row h2 {
     padding: 15px 7vw 0;
     font-size: 1.2em;
 }
@@ -773,120 +769,233 @@ h4 {
 /* PÁGINA SUPORTE*/
 
 /* PÁGINA PERFIL*/
+.profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-page {
+    margin: 30px 7vw;
+    align-items: center;
+}
+
 .titleb{
-    font-size: 30px;
+    font-size: 2em;
     margin-bottom: 20px;
     margin-top: 0px;
     text-align: center;
   }
+
 .titlep{
     font-size: 30px;
     margin-bottom: 20px;
     margin-top: 0px;
 }
-.containerp{
-    width: 90%;
-    margin:30px ;
-    margin-left: 60px;
 
+.account-page h2 {
+    font-weight: normal;
 }
+
 .options {
   display: flex;
-  margin-top: 10px;
-  margin-left: 180px;
-  padding-top:3px; 
-
+  margin: 20px 0;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .box {
   background-color: #F1F1F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 25px;
-  padding: 6px;
-  padding-top: 0px;
-  width: 40%; 
+  padding: 10px;
+  margin: 10px 0;
+  width: 25vw;
+  height: 2vw;
+  min-height: 45px;
   box-shadow: inset 0 0 20px #d6d6d6;
   border-width: medium;
   border-style: solid;
   border-color: #d6d6d6;
 }
 
+.box img {
+    height: 70%;
+    padding-right: 10%;
+}
+
+.box p {
+    font-size: 1.5vw;
+}
+
 #boxsuporte{
     margin-left: 160px;
 }
-.box img{
-    margin-top: 30px;
-    margin-left: 20px;
-    height: 60px;
-}
-.imgperfil{
-    margin-top: 0px;
-    margin-left: 20px;
-    height: 50px; 
-}
-a.linkperfil:link{
+
+.box p {
     text-decoration: none;
     color: black;
 }
-a.linkperfil:visited{
-    text-decoration: none;
-    color: black;
+
+.box:hover {
+    background-color: #dbdbdb;
+    transition: background-color 0.2s ease;
 }
-a.linkperfil:hover{
-    text-decoration: none;
-    color: black;
-}
-a.linkperfil:active{
-    text-decoration: none;
-    color: black; 
-}
+
 /* --------------------------------------------------------------------------------*/
 .dados {
-  width: 65%;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-
+    justify-content: center;
+    align-items: center;
+    width: 60%;
 }
 
 .form-groupp {
   margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-groupp input[type="text"],
-input[type="emaill"],
+input[type="email"],
 input[type="tel"] {
-  width: 1220px;
+    flex: 1;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: inset 0 0 5px #d6d6d6;
 
 }
-input[type="tex"]{
+
+.form-endereço label {
+    margin-right: 10px;
+}
+
+.form-endereço input {
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: inset 0 0 5px #d6d6d6;
-  width: 1100px;
   padding: 10px;
+  flex: 1;
 }
+
 .form-endereço {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
-button[type="submitt"] {
-  padding: 10px 20px;
-  background-color: #B2E3FF;
-  color: #000000;
-  border-radius: 10px;
-  border: 1px solid #a1dcff;
-  box-shadow: inset 0 0 5px #a2dbfc;
-  cursor: pointer;
-
+.dados h3 {
+    font-size: 1.2em;
+    padding-top: 10px;
 }
-#button{
-    text-align: right;
 
+.cards {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 20px;
 }
+
+.card-data {
+    background-color: #F1F1F1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    min-height: 7.6vw;
+}
+
+.card-brand {
+    width: 20%;
+}
+
+.card-data-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-data-top img {
+    left: 0;
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 5px;
+}
+
+.card-data-top p {
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+
+.card-data-top a {
+    padding-left: 2px;
+    color: #008DE0;
+}
+
+.card-data-bottom {
+    margin-top: 15px;
+}
+
+.card-data-bottom p {
+    margin: 0;
+}
+
+.card-name {
+    font-weight: bold;
+}
+
+.new-card-data {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 40%;
+    min-height: 7.6vw;
+    border: 1px dashed rgb(202, 202, 202);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.new-card-data img {
+    width: 15%;
+    padding: 1em;
+}
+
+.new-card-data p {
+    color: #555555;
+    margin: 0;
+}
+
+.new-card-data:hover {
+    background-color: #c4c4c4;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dados button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #B2E3FF;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid #a1dcff;
+    box-shadow: inset 0 0 5px #a2dbfc;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+ .dados button[type="submit"]:hover {
+      background-color: #7fd0ff;
+      transition: background-color 0.2s ease;
+  }
+  
+  #button{
+      text-align: right;
+  }
 
 /* PÁGINA PERFIL*/

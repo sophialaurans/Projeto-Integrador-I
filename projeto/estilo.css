@@ -1079,3 +1079,75 @@ input[type="tel"] {
     margin-right: 0; 
 }
 /*LOGIN*/
+
+/*CARRINHO*/
+
+
+.sacola {
+    max-width: 800px;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoria {
+    margin-bottom: 10px;
+}
+
+.categoria h2 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.bottom-cupom input,.bottom-cep input{
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+ 
+}
+
+.finalizar-compra{
+    margin-left: auto;
+    display: block;
+    background-color: #FFDF1B;
+    color: #000000;
+}
+.bottom-cep button,.bottom-cupom button{
+    background-color: #B2E3FF;
+    color: #000000;
+}
+/*CARRINHO*/

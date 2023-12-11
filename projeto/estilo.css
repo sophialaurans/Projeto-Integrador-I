@@ -1151,3 +1151,205 @@ button {
     color: #000000;
 }
 /*CARRINHO*/
+=======
+/*COMPRA*/
+.order-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 7vw;
+    justify-content: space-around;
+}
+
+.block {
+    background-color: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25vw;
+}
+
+.block h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-resume {
+    padding: 10px 0;
+}
+
+.order-resume table {
+    width: 100%;
+}
+
+.item {
+    padding-left: 10px;
+}
+
+.resume-price {
+    text-align: end;
+}
+
+.total-order {
+    margin-top: 20%;
+    font-size: 1.1em;
+}
+
+.total-order td {
+    font-size: 1.1em;
+}
+
+.total-order .resume-price {
+    font-size: 1.2em;
+}
+
+.deliver {
+    font-size: 1.1em;
+}
+
+.deliver-address {
+    background-color: #FAF8F8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.deliver-address p {
+    font-size: 0.9em;
+    margin: 5px;
+}
+
+.payment-method {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.payment-method input {
+    display: none;
+}
+
+.payment-method label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.payment-method label img {
+    width: 3vw;
+    border-radius: 10px;
+    background-color: #FAF8F8;
+    padding: 5px;
+}
+
+.payment-method input[type="radio"]:checked + label img {
+    border: 2px solid #3F0241;
+}
+
+.payment-method span {
+    font-size: 0.8em;
+    margin-top: 0.4em;
+}
+
+.saved-card {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+    background-color: #FAF8F8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.saved-card label {
+    display: flex;
+    align-items: center;
+}
+
+.saved-card label img {
+    width: 4vw;
+    height: 2.7vw;
+    margin-right: 2vw;
+}
+
+.saved-card-name {
+    font-weight: bold;
+}
+
+.saved-card-data p {
+    margin: 2px 0;
+}
+
+.order-link {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.order-link a {
+    color: #008DE0;
+}
+
+.order-link a:hover {
+    color: #006ead;
+}
+
+.newcard-info input {
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    justify-content: center;
+}
+
+.newcard-info-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.newcard-info-flex input {
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.type-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.type-card label {
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+
+.finalize-order {
+    display: flex;
+    position: relative;
+    margin: 20px 0 40px;
+    justify-content: center;
+}
+
+.finalize-order button {
+    padding: 10px 20px;
+    background-color: #B2E3FF;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid #a1dcff;
+    box-shadow: inset 0 0 5px #a2dbfc;
+    cursor: pointer;
+    font-weight: bold;
+    width: 20%;
+}
+
+.finalize-order button:hover {
+    background-color: #7fd0ff;
+    transition: background-color 0.2s ease;
+}
+>>>>>>> Stashed changes

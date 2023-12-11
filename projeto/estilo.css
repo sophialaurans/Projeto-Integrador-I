@@ -1080,7 +1080,6 @@ input[type="tel"] {
 }
 /*LOGIN*/
 
-<<<<<<< Updated upstream
 /*CARRINHO*/
 
 
@@ -1120,11 +1119,12 @@ input[type="tel"] {
     text-align: right;
 }
 
-p {
+.item p, .categoria p, .categoria-total p{
     margin: 0;
 }
 
-button {
+
+.sacola button {
     background-color: #4caf50;
     color: white;
     border: none;
@@ -1152,7 +1152,6 @@ button {
     color: #000000;
 }
 /*CARRINHO*/
-=======
 /*COMPRA*/
 .order-info {
     display: flex;
@@ -1353,4 +1352,3 @@ button {
     background-color: #7fd0ff;
     transition: background-color 0.2s ease;
 }
->>>>>>> Stashed changes
